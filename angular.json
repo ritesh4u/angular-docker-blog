@@ -53,6 +53,14 @@
               ],
               "outputHashing": "all"
             },
+            "tst":{
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.tst.ts"
+                }
+              ]
+            },
             "development": {
               "buildOptimizer": false,
               "optimization": false,
@@ -69,6 +77,9 @@
           "configurations": {
             "production": {
               "browserTarget": "angular-docker-blog:build:production"
+            },
+            "tst": {
+              "browserTarget": "angular-docker-blog:build:tst"
             },
             "development": {
               "browserTarget": "angular-docker-blog:build:development"
